@@ -2,9 +2,10 @@ resource "aws_s3_bucket" "project_bucket" {
   bucket = var.bucket_name
 
   tags = {
-    Name        = "Infrastructure-CICD-Demo"
-    Environment = "Development"
-    ManagedBy   = "Terraform"
+  Name        = "Infrastructure-CICD-Demo"
+  Environment = "Development"
+  ManagedBy   = "Terraform"
+  Project     = "Infrastructure-CICD-Pipeline"
   }
 }
 
